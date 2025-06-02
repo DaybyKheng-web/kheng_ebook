@@ -1,0 +1,140 @@
+/* style.css */
+:root {
+  --main-bg: #f3efe6;
+  --accent: #3e2d20;
+  --text-color: #221911;
+  --font-primary: 'Playfair Display', serif;
+  --font-secondary: 'Crimson Text', serif;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-secondary);
+  line-height: 1.95;
+  font-size: 1.075rem;
+  text-align: justify;
+}
+
+.book-layout {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background-image: repeating-linear-gradient(90deg, transparent, transparent 49%, #d0c4b5 49%, #d0c4b5 51%, transparent 51%, transparent 100%);
+  background-size: 100% 100%;
+}
+
+.book-spine {
+  width: 22px;
+  background-color: #c5b199;
+  box-shadow: inset -1px 0 0 #ab9882;
+}
+
+.book-cover {
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+    }
+
+.book-page {
+  max-width: 800px;
+  background: #fffcf6;
+  padding: 2.5rem 2rem;
+  border: 1px solid #d6c8b4;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.04);
+  position: relative;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid #bba88f;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-size: 2.8rem;
+  color: var(--accent);
+  margin: 0.5rem 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.nav a {
+  font-family: var(--font-primary);
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro-title {
+  font-family: var(--font-primary);
+  font-size: 1.85rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  font-style: italic;
+  font-size: 1.15rem;
+  max-width: 680px;
+  margin: auto;
+}
+
+.intro img {
+  max-width: 90%;
+  border: 1px solid #ae9d86;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+.start-button {
+  font-family: var(--font-primary);
+  background-color: var(--accent);
+  color: #fff;
+  padding: 0.7rem 1.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-weight: bold;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #bba88f;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #5a4c3b;
+  font-family: var(--font-secondary);
+}
+
+.dropcap::first-letter {
+  float: left;
+  font-size: 2.75em;
+  line-height: 1;
+  padding-right: 0.2em;
+  font-weight: bold;
+  color: var(--accent);
+}
